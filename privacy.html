@@ -10,7 +10,7 @@
 <main>
 <nav><a href="index.html">Assistenza</a><a href="privacy.html">Privacy</a><a href="#english">English</a></nav>
 <h1>Informativa sulla privacy</h1>
-<p class="sotto">Gym Time · aggiornata il 24 ottobre 2026</p>
+<p class="sotto">Gym Time · aggiornata il 25 ottobre 2026</p>
 
 <p>Gym Time non mostra pubblicità e non usa servizi di analisi o di tracciamento.</p>
 
@@ -37,14 +37,17 @@ dati su di te né sui tuoi allenamenti.</p>
 
 <h3>iCloud</h3>
 <p>Se attivi la sincronizzazione, questi dati vengono copiati nel tuo database iCloud privato, gestito
-da Apple, a cui lo sviluppatore non ha accesso. Puoi cancellarli in qualsiasi momento da
+da Apple, a cui lo sviluppatore non ha accesso. Il battito degli allenamenti e i dati del corpo presi
+da Salute (peso, altezza, anno di nascita, sesso) non vanno in iCloud: restano sul telefono e nelle sue
+copie di sicurezza. Puoi cancellare la copia in qualsiasi momento da
 <strong>Impostazioni › Dati e backup</strong>.</p>
 
 <h3>Google Drive</h3>
 <p>In alternativa a iCloud puoi tenere la copia sul tuo Google Drive. Gym Time chiede a Google solo il
 permesso <code>drive.appdata</code>: una cartella nascosta che vede soltanto Gym Time, mentre l'app non
-può vedere né modificare gli altri tuoi file. Lì vanno gli stessi dati della sincronizzazione iCloud,
-nel tuo spazio Google, a cui lo sviluppatore non ha accesso; il gettone che permette l'accesso resta nel
+può vedere né modificare gli altri tuoi file. Lì vanno i dati della sincronizzazione iCloud e in più,
+perché la copia l'hai scelta tu ed è solo tua, il battito degli allenamenti e i dati del corpo presi da
+Salute; tutto nel tuo spazio Google, a cui lo sviluppatore non ha accesso; il gettone che permette l'accesso resta nel
 portachiavi del telefono. Puoi scollegare Drive ed eliminare la copia da
 <strong>Impostazioni › Dati e backup › Sincronizzazione</strong>, oppure togliere il permesso dal tuo
 account Google.</p>
@@ -54,7 +57,9 @@ servizi API di Google</a>, compresi i requisiti di Uso limitato (Limited Use).</
 
 <h3>Salute</h3>
 <p>Con il tuo permesso, l'app salva gli allenamenti nell'app Salute e legge il battito e le attività
-compatibili. Questi dati non lasciano il dispositivo se non tramite Apple.</p>
+compatibili. Questi dati restano sul telefono e non vanno in iCloud. Escono solo verso chi scegli tu:
+la tua copia su Google Drive, se la usi, e il tuo allenatore, se ne hai uno (cifrati, vedi «Amici e
+club»). Non servono a pubblicità né a profilazione, e non entrano nel testo per un'IA.</p>
 
 <h3>Luogo dell'allenamento</h3>
 <p>Se non lo spegni (<strong>Impostazioni › Allenamento › Luogo dell'allenamento</strong>), quando
@@ -125,12 +130,15 @@ Firebase App Check: a check that the device and the app are genuine. It sends no
 your workouts.</p>
 <h3>On your device and in iCloud</h3>
 <p>Plans, workouts, body measurements and photos stay on your device. If you turn on sync, they are
-copied to your private iCloud database, managed by Apple, which the developer cannot access. You can
-delete them at any time in <strong>Settings › Data &amp; backup</strong>.</p>
+copied to your private iCloud database, managed by Apple, which the developer cannot access. Workout
+heart rate and the body data taken from Health (weight, height, year of birth, sex) do not go to
+iCloud: they stay on the phone and in its backups. You can delete the copy at any time in
+<strong>Settings › Data &amp; backup</strong>.</p>
 <h3>Google Drive</h3>
 <p>Instead of iCloud you can keep the copy on your Google Drive. Gym Time asks Google only for the
 <code>drive.appdata</code> permission: a hidden folder that only Gym Time can see, while the app cannot
-see or change any of your other files. It holds the same data as iCloud sync, in your own Google
+see or change any of your other files. It holds the iCloud sync data plus, since you chose this copy
+and it is yours alone, workout heart rate and the body data taken from Health; all in your own Google
 storage, which the developer cannot access; the token that grants access stays in the phone's keychain.
 You can disconnect Drive and delete the copy in <strong>Settings › Data &amp; backup › Sync</strong>, or
 remove the permission from your Google account.</p>
@@ -144,7 +152,9 @@ the place (for example «McFit, Milano»). Only the name is saved, never the coo
 log and in your iCloud or Google Drive copy, and is sent neither to friends nor to your coach.</p>
 <h3>Health</h3>
 <p>With your permission, the app saves workouts to the Health app and reads heart rate and compatible
-activities. This data does not leave the device except through Apple.</p>
+activities. This data stays on the phone and does not go to iCloud. It leaves only towards whom you
+choose: your Google Drive copy, if you use it, and your coach, if you have one (encrypted, see «Friends
+and clubs»). It is never used for advertising or profiling, and never goes into the text for an AI.</p>
 <h3>Friends and clubs</h3>
 <p>What you share with a friend or a club is encrypted on your device with a code only you know, and
 stored in that form on iCloud and on Google Firebase (database in Milan, Italy): neither Apple, nor
