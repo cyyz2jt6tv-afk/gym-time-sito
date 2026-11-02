@@ -10,7 +10,7 @@
 <main>
 <nav><a href="index.html">Assistenza</a><a href="privacy.html">Privacy</a><a href="#english">English</a></nav>
 <h1>Informativa sulla privacy</h1>
-<p class="sotto">Gym Time · aggiornata il 29 ottobre 2026</p>
+<p class="sotto">Gym Time · aggiornata il 2 novembre 2026</p>
 
 <p>Gym Time non mostra pubblicità e non usa servizi di analisi o di tracciamento.</p>
 
@@ -59,7 +59,7 @@ servizi API di Google</a>, compresi i requisiti di Uso limitato (Limited Use).</
 <p>Con il tuo permesso, l'app salva gli allenamenti nell'app Salute e legge il battito e le attività
 compatibili. Questi dati restano sul telefono e non vanno in iCloud. Escono solo verso chi scegli tu:
 la tua copia su Google Drive, se la usi, e il tuo allenatore, se ne hai uno (cifrati, vedi «Amici e
-club»). Non servono a pubblicità né a profilazione, e non entrano nel testo per un'IA.</p>
+club»). Non servono a pubblicità né a profilazione, e vanno a un'IA solo se lo scegli tu (vedi «Intelligenza artificiale»).</p>
 
 <h3>Dati sulla salute e consenso</h3>
 <p>Peso, misure e foto dei progressi, battito, respiro, check-in mandati all'allenatore e i dati letti
@@ -111,12 +111,24 @@ contenuti.</p>
 allenarti con amici, club e palestre; quelli sulla salute, in più, con il tuo consenso (art. 9.2.a, vedi
 sopra). Restano finché usi l'app: l'account fino alla sua eliminazione, quello
 che condividi finché lo togli o elimini l'account. Apple (iCloud, Accedi con Apple, App Attest) e
-Google (Firebase Authentication, Firestore, App Check e, se lo scegli, Google Drive) li trattano per conto del titolare come
-responsabili del trattamento.</p>
+Google (Firebase Authentication, Firestore, App Check e, se lo scegli, Google Drive) e, se usi Claude
+nell'app, Anthropic li trattano per conto del titolare come responsabili del trattamento.</p>
 
 <h3>Microfono e fotocamera</h3>
 <p>Usati solo se li attivi tu: il microfono per contare i respiri, elaborato sul dispositivo e mai
-registrato; la fotocamera per le foto di esercizi e progressi.</p>
+registrato, e per dettare le note degli esercizi (la trascrizione la fa il riconoscimento vocale di Apple);
+la fotocamera per le foto di esercizi e progressi.</p>
+
+<h3>Intelligenza artificiale (Claude)</h3>
+<p>Due funzioni possono usare un'IA: leggere la foto o il PDF di una scheda e scrivere una scheda dal
+questionario. Di serie l'app prepara il testo e sei tu a portarlo nell'IA che usi. Se hai fatto l'accesso
+puoi invece toccare «Con Claude, subito» o «Scrivila con Claude»: solo allora l'app manda ad Anthropic
+(Claude, server negli Stati Uniti; il trasferimento avviene con le garanzie delle condizioni commerciali
+di Anthropic per l'API) la foto o il PDF, oppure le risposte al questionario con il tuo profilo
+senza nome e, se hai acceso «Condividi gli allenamenti passati», il riassunto dei tuoi allenamenti,
+compresi quelli letti da Salute. Anthropic li usa solo per rispondere, non per addestrare i modelli, e
+li cancella dopo un periodo limitato secondo le sue regole per l'API. Ogni account ha un numero di
+richieste al giorno; nulla parte senza che tu lo tocchi.</p>
 
 <h3>I tuoi diritti</h3>
 <p>Puoi chiedere in ogni momento di accedere ai tuoi dati, correggerli o cancellarli scrivendo
@@ -165,7 +177,7 @@ log and in your iCloud or Google Drive copy, and is sent neither to friends nor 
 <p>With your permission, the app saves workouts to the Health app and reads heart rate and compatible
 activities. This data stays on the phone and does not go to iCloud. It leaves only towards whom you
 choose: your Google Drive copy, if you use it, and your coach, if you have one (encrypted, see «Friends
-and clubs»). It is never used for advertising or profiling, and never goes into the text for an AI.</p>
+and clubs»). It is never used for advertising or profiling, and goes to an AI only if you choose so (see «Artificial intelligence»).</p>
 <h3>Health data and consent</h3>
 <p>Weight, measurements and progress photos, heart rate, breathing, check-ins sent to your coach and
 data read from Health are data concerning health (Art. 9 GDPR). The app uses them only with your
@@ -202,11 +214,22 @@ or content.</p>
 training with friends, clubs and gyms; health data, in addition, with your consent (Art. 9(2)(a), see
 above). It is kept while you use the app: the account until you delete it,
 what you share until you remove it or delete the account. Apple (iCloud, Sign in with Apple, App
-Attest) and Google (Firebase Authentication, Firestore, App Check and, if you choose it, Google Drive) process it on the controller's
-behalf as processors.</p>
+Attest), Google (Firebase Authentication, Firestore, App Check and, if you choose it, Google Drive) and, if
+you use Claude in the app, Anthropic process it on the controller's behalf as processors.</p>
 <h3>Microphone and camera</h3>
 <p>Used only if you turn them on: the microphone to count breaths, processed on the device and never
-recorded; the camera for exercise and progress photos.</p>
+recorded, and to dictate exercise notes (transcribed by Apple's speech recognition); the camera for
+exercise and progress photos.</p>
+<h3>Artificial intelligence (Claude)</h3>
+<p>Two features can use an AI: reading a photo or PDF of a plan, and writing a plan from the
+questionnaire. By default the app prepares the text and you take it to the AI you use. If you are signed
+in you can instead tap «With Claude, right away» or «Write it with Claude»: only then does the app send
+to Anthropic (Claude, servers in the United States; the transfer takes place under the safeguards of Anthropic's
+commercial terms for the API) the photo or PDF, or your questionnaire answers with your
+profile without your name and, if «Share past workouts» is on, the summary of your workouts, including
+those read from Health. Anthropic uses them only to answer, not to train its models, and deletes them
+after a limited period under its API policies. Each account has a number of requests per day; nothing is
+sent unless you tap it.</p>
 <h3>Your rights</h3>
 <p>You can ask at any time to access, correct or delete your data by writing to the address above, and
 delete your account yourself in the app. You can also lodge a complaint with the Italian data
