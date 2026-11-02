@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Gym Time · Aggiungi un amico</title>
+<link rel="stylesheet" href="stile.css">
+</head>
+<body>
+<main>
+<h1 id="titolo">Aggiungi un amico su Gym Time</h1>
+<p class="sotto" id="chi"></p>
+
+<p><a id="apri" class="pulsante" href="#">Apri in Gym Time</a></p>
+<p id="spiega">Si apre Gym Time e parte la richiesta d'amicizia: all'altra persona resta da accettare.</p>
+<p id="senza">Non hai Gym Time? Chiedi l'invito a chi ti ha mandato questo link, poi tocca di nuovo il link,
+oppure cerca il suo ID in <strong>Amici › +</strong>.</p>
+
+<hr>
+<h2 id="english">Add a friend on Gym Time</h2>
+<p>Tap the button above: Gym Time opens and sends the friend request; the other person just accepts.
+No Gym Time yet? Ask the person who sent you this link for an invite, then tap the link again,
+or search their ID in <strong>Friends › +</strong>.</p>
+</main>
+<script>
+// L'ID arriva come ?u=<id>: solo lettere minuscole, cifre, punto e trattino basso, come nell'app.
+(function () {
+  var raw = new URLSearchParams(location.search).get("u") || "";
+  var id = raw.toLowerCase().replace(/^@/, "");
+  if (!/^[a-z][a-z0-9._]{2,23}$/.test(id)) {
+    document.getElementById("chi").textContent = "Il link non contiene un ID valido.";
+    document.getElementById("apri").style.display = "none";
+    return;
+  }
+  var app = "gymtime://id/" + encodeURIComponent(id) + "?add=1";
+  document.getElementById("chi").textContent = "@" + id;
+  document.getElementById("apri").setAttribute("href", app);
+  // Prova ad aprire l'app da sola; se non c'e', resta la pagina col pulsante.
+  setTimeout(function () { location.href = app; }, 300);
+})();
+</script>
+</body>
+</html>

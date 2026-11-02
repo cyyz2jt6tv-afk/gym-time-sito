@@ -11,3 +11,4 @@ p, li { margin: 0 0 12px; }
 a { color: var(--accento); }
 nav { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 24px; font-size: 15px; }
 footer { color: var(--tenue); font-size: 14px; margin-top: 48px; }
+.pulsante { display: inline-block; padding: 12px 22px; border-radius: 12px; background: #e8711a; color: #fff; font-weight: 600; text-decoration: none; }
